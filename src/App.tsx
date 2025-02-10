@@ -1,8 +1,12 @@
-import './App.css'
+import EventCard from './components/EventCard';
+import { Provider } from 'react-redux';
+import { store } from './store/store';
 
 function App() {
   return (
-      <div>Hello</div>
+      <Provider store={store}>
+        <EventCard />
+      </Provider>
   )
 }
 
