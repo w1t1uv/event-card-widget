@@ -4,7 +4,7 @@ import { updateEvent } from '../store/eventSlice';
 import { Button, Form, Input, Modal, Switch } from 'antd';
 import styles from '../styles/SettingsForm.module.css';
 
-function SettingsForm({ onClose }: Props): JSX.Element {
+function SettingsForm({ onClose }: Props) {
     const dispatch = useDispatch();
 
     const handleFinish = (values: EventState): void => {
